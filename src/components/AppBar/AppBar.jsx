@@ -5,7 +5,7 @@ export default function AppBar() {
   return (
     <header className={css.headerBox}>
       <NavLink className={css.headerLink} to="/">
-        <span className={css.headerLink}>Back</span>
+        <span className={css.headerLink}>Home</span>
       </NavLink>
       <span className={css.headerElement}>
         <NavLink to="/tweets" className={css.headerLink}>

@@ -2,6 +2,7 @@
   display: block;
   position: relative;
   list-style: none;
+  margin-top: 20px;
   width: 380px;
   height: 460px;
   background: linear-gradient(90deg, #471ca9, #5736a3, #4b2a99);
