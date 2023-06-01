@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-import AppBar from './AppBar.jsx';
+import AppBar from '../AppBar/AppBar.jsx';
 export default function Layout() {
   return (
     <>
