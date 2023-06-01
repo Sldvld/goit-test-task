@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkoit_test_task=self.webpackChunkoit_test_task||[]).push([[344],{344:function(e,t,s){s.r(t),s.d(t,{default:function(){return c}});var n="Home_homeLabel__KoXzL",o="Home_homeLink__VrQVP",r=s(87),a=s(184);function c(){return(0,a.jsx)("div",{children:(0,a.jsxs)("h1",{className:n,children:["Welcome to your personal"," ",(0,a.jsx)(r.OL,{to:"/tweets",className:o,children:"Tweeter!"})]})})}}}]);
+//# sourceMappingURL=344.7f5a4b35.chunk.js.map
