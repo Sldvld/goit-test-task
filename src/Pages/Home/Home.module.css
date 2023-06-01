@@ -1,0 +1,13 @@
+.homeLabel {
+  display: block;
+  margin-top: 150px;
+
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #5cd3a8;
+  text-align: center;
+}
+.homeLink {
+  color: #5cd3a8;
+}

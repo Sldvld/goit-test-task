@@ -1,0 +1,91 @@
+.userCard {
+  display: block;
+  position: relative;
+  list-style: none;
+  width: 380px;
+  height: 460px;
+  background: linear-gradient(90deg, #471ca9, #5736a3, #4b2a99);
+  box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
+  border-radius: 20px;
+}
+.userItem {
+  list-style: none;
+}
+.goItLogo {
+  width: 76px;
+  height: 22px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.bckLogo {
+  position: absolute;
+  width: 308px;
+  height: 168px;
+  left: 36px;
+  top: 28px;
+}
+.elipse {
+  position: absolute;
+  top: 218px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.line {
+  position: absolute;
+  top: 210px;
+  left: 0;
+}
+.tweetsBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 242px;
+}
+.tweets {
+  display: block;
+  margin: 0 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #ebd8ff;
+}
+.followers {
+  display: block;
+  margin: 16px 0px 26px 0px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #ebd8ff;
+}
+.button {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  color: #373737;
+  padding: 14px 56px;
+  background: #e6d4ff;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #373737;
+}
+.button:focus,
+.button:hover {
+  background: #d9b1ff;
+  transition: 0.4s linear;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+}
