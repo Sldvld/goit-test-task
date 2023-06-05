@@ -1,30 +1,37 @@
 import { UserItem } from 'components/UserCard/UserCard';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { firstFetch, fetchMore } from 'Redux/users-operations';
-import { selectUsers, selectPage, selectIsLoading } from 'Redux/users-selector';
+import { selectUsers, selectPage } from 'Redux/users-selector';
 import css from './UsersList.module.css';
-import BigLoader from '../Loader/BigLoader';
+import BigLoader from 'components/Loader/BigLoader';
 
 export function UsersList() {
   const dispatch = useDispatch();
   const users = useSelector(selectUsers);
   const page = useSelector(selectPage);
-  const isLoading = useSelector(selectIsLoading);
+  const [isFirstFetch, setIsFirstFetch] = useState(true);
 
   useEffect(() => {
-    const fetchPararms = { page };
-    if (page === 1) {
-      dispatch(firstFetch(fetchPararms));
+    const fetchParams = { page };
+    if (page === 1 && isFirstFetch) {
+      dispatch(firstFetch(fetchParams))
+        .then(() => {
+          setIsFirstFetch(false);
+        })
+        .catch(error => {
+          console.error('Error fetching data:', error);
+          setIsFirstFetch(false);
+        });
     } else {
-      dispatch(fetchMore(fetchPararms));
+      dispatch(fetchMore(fetchParams));
     }
-  }, [dispatch, page]);
+  }, [dispatch, page, isFirstFetch]);
 
   return (
     <ul className={css.tweetsList}>
-      {isLoading ? (
-        <BigLoader className={css.bigLoader} />
+      {isFirstFetch ? (
+        <BigLoader />
       ) : (
         users.map(user => <UserItem user={user} key={user.id} />)
       )}

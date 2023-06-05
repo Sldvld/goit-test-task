@@ -2,13 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 75px;
   padding: 0;
   margin: 0;
-  align-items: center;
 }
 .bigLoader {
   display: block;
-  align-items: center;
-  align-content: center;
 }
