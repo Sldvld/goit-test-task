@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/goit-test-task/static/css/main.59f92fc7.css",
-    "main.js": "/goit-test-task/static/js/main.a5153dc6.js",
+    "main.js": "/goit-test-task/static/js/main.4aa47a88.js",
     "static/css/344.ad989fc6.chunk.css": "/goit-test-task/static/css/344.ad989fc6.chunk.css",
     "static/js/344.d00403db.chunk.js": "/goit-test-task/static/js/344.d00403db.chunk.js",
-    "static/css/608.e131bf45.chunk.css": "/goit-test-task/static/css/608.e131bf45.chunk.css",
-    "static/js/608.1d7592bb.chunk.js": "/goit-test-task/static/js/608.1d7592bb.chunk.js",
+    "static/css/608.fbb79ecc.chunk.css": "/goit-test-task/static/css/608.fbb79ecc.chunk.css",
+    "static/js/608.06b29063.chunk.js": "/goit-test-task/static/js/608.06b29063.chunk.js",
     "static/js/405.c59ca555.chunk.js": "/goit-test-task/static/js/405.c59ca555.chunk.js",
     "static/media/picture.svg": "/goit-test-task/static/media/picture.1a865da81713d8fe36d828178a9c9762.svg",
     "static/media/goItLogo.svg": "/goit-test-task/static/media/goItLogo.e917114d7945c04c85a8946a331d28b6.svg",
@@ -13,15 +13,15 @@
     "static/media/line.svg": "/goit-test-task/static/media/line.3dc889ed819cc56238bce43c61f74ccc.svg",
     "index.html": "/goit-test-task/index.html",
     "main.59f92fc7.css.map": "/goit-test-task/static/css/main.59f92fc7.css.map",
-    "main.a5153dc6.js.map": "/goit-test-task/static/js/main.a5153dc6.js.map",
+    "main.4aa47a88.js.map": "/goit-test-task/static/js/main.4aa47a88.js.map",
     "344.ad989fc6.chunk.css.map": "/goit-test-task/static/css/344.ad989fc6.chunk.css.map",
     "344.d00403db.chunk.js.map": "/goit-test-task/static/js/344.d00403db.chunk.js.map",
-    "608.e131bf45.chunk.css.map": "/goit-test-task/static/css/608.e131bf45.chunk.css.map",
-    "608.1d7592bb.chunk.js.map": "/goit-test-task/static/js/608.1d7592bb.chunk.js.map",
+    "608.fbb79ecc.chunk.css.map": "/goit-test-task/static/css/608.fbb79ecc.chunk.css.map",
+    "608.06b29063.chunk.js.map": "/goit-test-task/static/js/608.06b29063.chunk.js.map",
     "405.c59ca555.chunk.js.map": "/goit-test-task/static/js/405.c59ca555.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.59f92fc7.css",
-    "static/js/main.a5153dc6.js"
+    "static/js/main.4aa47a88.js"
   ]
 }
