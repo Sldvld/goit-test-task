@@ -9,6 +9,7 @@ import PropTypes from 'prop-types';
 import css from './UserCard.module.css';
 import { toast } from 'react-toastify';
 import Loader from '../Loader/Loader';
+import Tooltip from '@mui/joy/Tooltip';
 
 export function UserItem({
   user: { isFollowing, id, user, avatar, tweets, followers },
@@ -42,7 +43,16 @@ export function UserItem({
         <CardBackground className={css.bckLogo} />
         <Line className={css.line} />
         <Elipse className={css.elipse} />
-        <img className={css.userAvatar} src={avatar} alt="User avatar" />
+        <Tooltip
+          size="md"
+          placement="top"
+          arrow
+          title={user}
+          variant="outlined"
+          color="info"
+        >
+          <img className={css.userAvatar} src={avatar} alt="User avatar" />
+        </Tooltip>
         <div className={css.tweetsBox}>
           <p className={css.tweets}>{tweets.toLocaleString('en-US')} tweets</p>
           <p className={css.followers}>

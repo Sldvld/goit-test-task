@@ -5,6 +5,8 @@
   "homepage": "https://Sldvld.github.io/goit-test-task/",
   "dependencies": {
     "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/joy": "^5.0.0-alpha.82",
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
