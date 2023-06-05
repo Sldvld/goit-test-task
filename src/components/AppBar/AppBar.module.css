@@ -11,11 +11,18 @@
   background: linear-gradient(90deg, #5736a3, #4b2a99, #471ca9);
   box-shadow: 0px 7px 10px rgba(87, 54, 163, 0.5);
 }
-
+.headerSection {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  width: 90%;
+  padding: 15px;
+  align-items: center;
+}
 .headerLink {
   display: block;
   text-decoration: none;
-  padding: 15px;
   color: #ebd8ff;
   font-weight: 700;
   font-size: 25px;
