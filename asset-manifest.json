@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/goit-test-task/static/css/main.6ad21c10.css",
-    "main.js": "/goit-test-task/static/js/main.c7064a0f.js",
+    "main.css": "/goit-test-task/static/css/main.abe8649a.css",
+    "main.js": "/goit-test-task/static/js/main.d57569ad.js",
     "static/css/344.ad989fc6.chunk.css": "/goit-test-task/static/css/344.ad989fc6.chunk.css",
     "static/js/344.7f5a4b35.chunk.js": "/goit-test-task/static/js/344.7f5a4b35.chunk.js",
-    "static/css/732.03c76cd0.chunk.css": "/goit-test-task/static/css/732.03c76cd0.chunk.css",
-    "static/js/732.8e95937f.chunk.js": "/goit-test-task/static/js/732.8e95937f.chunk.js",
+    "static/css/869.eeaa9e11.chunk.css": "/goit-test-task/static/css/869.eeaa9e11.chunk.css",
+    "static/js/869.7de0571a.chunk.js": "/goit-test-task/static/js/869.7de0571a.chunk.js",
     "static/media/picture.svg": "/goit-test-task/static/media/picture.1a865da81713d8fe36d828178a9c9762.svg",
     "static/media/goItLogo.svg": "/goit-test-task/static/media/goItLogo.e917114d7945c04c85a8946a331d28b6.svg",
     "static/media/ellipse.svg": "/goit-test-task/static/media/ellipse.77f9a8484aa5bbe7fb8d02de00904a21.svg",
     "static/media/line.svg": "/goit-test-task/static/media/line.3dc889ed819cc56238bce43c61f74ccc.svg",
     "index.html": "/goit-test-task/index.html",
-    "main.6ad21c10.css.map": "/goit-test-task/static/css/main.6ad21c10.css.map",
-    "main.c7064a0f.js.map": "/goit-test-task/static/js/main.c7064a0f.js.map",
+    "main.abe8649a.css.map": "/goit-test-task/static/css/main.abe8649a.css.map",
+    "main.d57569ad.js.map": "/goit-test-task/static/js/main.d57569ad.js.map",
     "344.ad989fc6.chunk.css.map": "/goit-test-task/static/css/344.ad989fc6.chunk.css.map",
     "344.7f5a4b35.chunk.js.map": "/goit-test-task/static/js/344.7f5a4b35.chunk.js.map",
-    "732.03c76cd0.chunk.css.map": "/goit-test-task/static/css/732.03c76cd0.chunk.css.map",
-    "732.8e95937f.chunk.js.map": "/goit-test-task/static/js/732.8e95937f.chunk.js.map"
+    "869.eeaa9e11.chunk.css.map": "/goit-test-task/static/css/869.eeaa9e11.chunk.css.map",
+    "869.7de0571a.chunk.js.map": "/goit-test-task/static/js/869.7de0571a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ad21c10.css",
-    "static/js/main.c7064a0f.js"
+    "static/css/main.abe8649a.css",
+    "static/js/main.d57569ad.js"
   ]
 }
