@@ -2,11 +2,9 @@ import { useEffect } from 'react';
 import css from './ScrollUpButton.module.css';
 
 export const ScrollUpButton = () => {
-  const handleScroll = () => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  };
-
   useEffect(() => {
+    const handleScroll = () => {};
+
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);

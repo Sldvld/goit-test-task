@@ -5,7 +5,7 @@ import { ReactComponent as Elipse } from '../Images/ellipse.svg';
 import { useDispatch } from 'react-redux';
 import { putUsers } from 'Redux/users-operations';
 import { useState } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import css from './UserCard.module.css';
 import { toast } from 'react-toastify';
 import Loader from '../Loader/Loader';
