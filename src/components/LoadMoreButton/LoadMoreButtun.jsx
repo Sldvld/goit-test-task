@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { incrementPage } from 'Redux/users-slice';
 import { selectIsLoading, selectLoadMore } from 'Redux/users-selector';
 import css from './LoadMoreButton.module.css';
+import Loader from '../Loader/Loader';
 
 export function LoadMoreButton() {
   const dispatch = useDispatch();
@@ -17,7 +18,7 @@ export function LoadMoreButton() {
           dispatch(incrementPage());
         }}
       >
-        Load more
+        {isLoading ? <Loader /> : 'Load more'}
       </button>
     )
   );

@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux';
 import { putUsers } from 'Redux/users-operations';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
+import Loader from '../Loader/Loader';
 
 export function UserItem({
   user: { isFollowing, id, user, avatar, tweets, followers },
@@ -42,7 +43,7 @@ export function UserItem({
         <CardBackground className={css.bckLogo} />
         <Line className={css.line} />
         <Elipse className={css.elipse} />
-        <img className={css.userAvatar} src={avatar} alt={user} />
+        <img className={css.userAvatar} src={avatar} alt="User avatar" />
         <div className={css.tweetsBox}>
           <p className={css.tweets}>{tweets.toLocaleString('en-US')} tweets</p>
           <p className={css.followers}>
@@ -55,7 +56,7 @@ export function UserItem({
             data-isfollowing={true}
             onClick={handleFollow}
           >
-            {isFollowing ? 'Following' : 'Follow'}
+            {isLoading ? <Loader /> : isFollowing ? 'Following' : 'Follow'}
           </button>
         </div>
       </div>
