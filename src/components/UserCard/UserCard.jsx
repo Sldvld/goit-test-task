@@ -1,5 +1,4 @@
 import css from './UserCard.module.css';
-import PropTypes from 'prop-types';
 import { ReactComponent as GoItLogo } from '../Images/goItLogo.svg';
 import { ReactComponent as CardBackground } from '../Images/picture.svg';
 import { ReactComponent as Line } from '../Images/line.svg';
@@ -8,7 +7,6 @@ import { useDispatch } from 'react-redux';
 import { putUsers } from 'Redux/users-operations';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
-import { getValue } from '@testing-library/user-event/dist/utils';
 
 export function UserItem({
   user: { isFollowing, id, user, avatar, tweets, followers },
