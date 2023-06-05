@@ -1,4 +1,3 @@
-import css from './UserCard.module.css';
 import { ReactComponent as GoItLogo } from '../Images/goItLogo.svg';
 import { ReactComponent as CardBackground } from '../Images/picture.svg';
 import { ReactComponent as Line } from '../Images/line.svg';
@@ -6,6 +5,8 @@ import { ReactComponent as Elipse } from '../Images/ellipse.svg';
 import { useDispatch } from 'react-redux';
 import { putUsers } from 'Redux/users-operations';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
+import css from './UserCard.module.css';
 import { toast } from 'react-toastify';
 import Loader from '../Loader/Loader';
 
@@ -20,9 +21,7 @@ export function UserItem({
     const payload = {
       id: id,
       isFollowing: !isFollowing,
-      followers: parseFloat(
-        isFollowing ? parseFloat(followers) - 1 : parseFloat(followers) + 1
-      ),
+      followers: isFollowing ? followers - 1 : followers + 1,
     };
     setLoading(true);
 
@@ -51,7 +50,6 @@ export function UserItem({
           </p>
           <button
             className={`${css.button} ${isFollowing ? css.following : ''}`}
-            // isLoading={isLoading ? 'true' : 'false'}
             disabled={isLoading}
             data-isfollowing={true}
             onClick={handleFollow}
@@ -63,12 +61,12 @@ export function UserItem({
     </li>
   );
 }
-// UserItem.propTypes = {
-//   user: PropTypes.shape({
-//     avatar: PropTypes.string.isRequired,
-//     user: PropTypes.string.isRequired,
-//     tweets: PropTypes.number.isRequired,
-//     followers: PropTypes.string.isRequired,
-//     id: PropTypes.string.isRequired,
-//   }).isRequired,
-// };
+UserItem.propTypes = {
+  user: PropTypes.shape({
+    avatar: PropTypes.string.isRequired,
+    user: PropTypes.string.isRequired,
+    tweets: PropTypes.number.isRequired,
+    followers: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
+  }).isRequired,
+};

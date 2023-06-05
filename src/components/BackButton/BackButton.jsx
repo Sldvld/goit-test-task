@@ -8,7 +8,7 @@ export function BackButton() {
   };
   return (
     <button className={css.backButton} onClick={goBack}>
-      〈〈〈 Back
+      〈 Back
     </button>
   );
 }
