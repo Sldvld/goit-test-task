@@ -42,7 +42,7 @@ export function UserItem({
         <CardBackground className={css.bckLogo} />
         <Line className={css.line} />
         <Elipse className={css.elipse} />
-        {/* <img src={avatar} alt={user} /> */}
+        <img className={css.userAvatar} src={avatar} alt={user} />
         <div className={css.tweetsBox}>
           <p className={css.tweets}>{tweets.toLocaleString('en-US')} tweets</p>
           <p className={css.followers}>
@@ -50,7 +50,7 @@ export function UserItem({
           </p>
           <button
             className={`${css.button} ${isFollowing ? css.following : ''}`}
-            isLoading={isLoading ? 'true' : 'false'}
+            // isLoading={isLoading ? 'true' : 'false'}
             disabled={isLoading}
             data-isfollowing={true}
             onClick={handleFollow}
