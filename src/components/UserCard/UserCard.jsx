@@ -71,12 +71,12 @@ export function UserItem({
     </li>
   );
 }
-UserItem.propTypes = {
-  user: PropTypes.shape({
-    avatar: PropTypes.string.isRequired,
-    user: PropTypes.string.isRequired,
-    tweets: PropTypes.number.isRequired,
-    followers: PropTypes.number.isRequired,
-    id: PropTypes.string.isRequired,
-  }).isRequired,
-};
+// UserItem.propTypes = {
+//   user: PropTypes.shape({
+//     avatar: PropTypes.string.isRequired,
+//     user: PropTypes.string.isRequired,
+//     tweets: PropTypes.number.isRequired,
+//     followers: PropTypes.number.isRequired,
+//     id: PropTypes.string.isRequired,
+//   }).isRequired,
+// };
