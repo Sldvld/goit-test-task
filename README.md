@@ -6,10 +6,6 @@ followers from your Twitter account.
 
 ## Features
 
-- **Track Tweets:** Enter specific keywords or hashtags to track related tweets
-  in real-time. The application will fetch and display the latest tweets
-  containing the specified keywords.
-
 - **Follower Management:** Easily manage your Twitter followers directly from
   the application. Add or remove followers with a simple click, providing a
   seamless experience for managing your follower base.
