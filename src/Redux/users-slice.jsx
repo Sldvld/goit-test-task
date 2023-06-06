@@ -25,9 +25,9 @@ const usersSlice = createSlice({
         state.error = false;
       })
       .addCase(firstFetch.fulfilled, (state, action) => {
+        state.isLoading = false;
         state.items = action.payload;
         state.loadMore = action.payload.length < USERS_LIMIT ? false : true;
-        state.isLoading = false;
       })
       .addCase(firstFetch.rejected, (state, action) => {
         state.isLoading = false;

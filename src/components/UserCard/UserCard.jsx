@@ -12,7 +12,7 @@ import Loader from '../Loader/Loader';
 import Tooltip from '@mui/joy/Tooltip';
 
 export function UserItem({
-  user: { isFollowing, id, user, avatar, tweets, followers },
+  user: { index, isFollowing, id, user, avatar, tweets, followers },
 }) {
   const dispatch = useDispatch();
   const [isLoading, setLoading] = useState(false);
@@ -37,7 +37,7 @@ export function UserItem({
   };
 
   return (
-    <li className={css.userItem} key={id}>
+    <li className={css.userItem} key={index}>
       <div className={css.userCard}>
         <GoItLogo className={css.goItLogo} alt="logo" />
         <CardBackground className={css.bckLogo} />

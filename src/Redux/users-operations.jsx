@@ -15,6 +15,7 @@ export const fetchUsers = async (
   }
   try {
     const response = await axios.get('/users', { params });
+    console.log(response.data);
     return response.data;
   } catch (error) {
     return rejectWithValue(error.message);
