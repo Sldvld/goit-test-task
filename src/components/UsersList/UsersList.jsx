@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { firstFetch, fetchMore } from 'Redux/users-operations';
 import { selectUsers, selectPage } from 'Redux/users-selector';
 import css from './UsersList.module.css';
-import BigLoader from 'components/Loader/BigLoader';
+// import BigLoader from 'components/Loader/BigLoader';
 
 export function UsersList() {
   const dispatch = useDispatch();
