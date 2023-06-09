@@ -11,19 +11,20 @@ export function UsersList() {
   const users = useSelector(selectUsers);
   const page = useSelector(selectPage);
   const isLoading = useSelector(selectIsLoading);
+  const isFirstFetch = page === 1;
 
   useEffect(() => {
     const fetchParams = { page };
-    if (page === 1) {
+    if (isFirstFetch) {
       dispatch(firstFetch(fetchParams));
     } else {
       dispatch(fetchMore(fetchParams));
     }
-  }, [dispatch, page]);
+  }, [dispatch, page, isFirstFetch]);
 
   return (
     <ul className={css.tweetsList}>
-      {isLoading ? (
+      {isLoading && isFirstFetch ? (
         <BigLoader />
       ) : (
         users.map(user => <UserItem user={user} key={user.id} />)
